@@ -29,8 +29,11 @@ It also has the 'callNumber' function, which calls a random number from the list
 # URLS
     
    http://localhost:3001/api/player/create/1
+
    http://localhost:3001/api/player/bingo/1
+
    http://localhost:3001/api/player/list
+   
    http://localhost:3001/api/bingo/number
 
 # RUNSEVER
