@@ -33,13 +33,14 @@ It also has the 'callNumber' function, which calls a random number from the list
    http://localhost:3001/api/player/bingo/1
 
    http://localhost:3001/api/player/list
-   
+
    http://localhost:3001/api/bingo/number
 
 # RUNSEVER
 To run the system enter the following commands
 
 > npm install 
+
 > npm run devbabel
 	
 All information is stored in the cache, but can be stored in a database.
