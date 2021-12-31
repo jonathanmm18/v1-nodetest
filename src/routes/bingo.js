@@ -16,12 +16,13 @@ router.get('/player/bingo/:id', (req, res) => {
     var player_id = bingo.getPlayer(_id);
   
     if(player_id){
-    var bingo_status = player_id.callBingo();
-    if(bingo_status){
-        res.send({msj:"BINGO!!! You are a winner"});
+        var bingo_status = player_id.callBingo();
+        if(bingo_status){
+            res.send({msj:"BINGO!!! You are a winner"});
+        }else{
+            res.send({msj:"you are not a winner yet!"});
+        }
     }else{
-        res.send({msj:"you are not a winner yet!"});
-    }}else{
         res.send({msj:"you are not a player"});
     }
     
@@ -36,7 +37,7 @@ router.get('/bingo/number', (req, res) => {
     res.send({number: _number, bingo: bingo.bingo}); 
  });
  
- 
+
 
 
 module.exports = router;    
